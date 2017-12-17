@@ -3,13 +3,15 @@ package com.hillel.webinar.hibernate.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "employees")
-public class Employee {
+@Table(name = "departments")
+public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
-    private User user;
+    @Column(name = "name")
+    private String name;
+
+//    @OneToOne
+//    private Department parent_department;
 }

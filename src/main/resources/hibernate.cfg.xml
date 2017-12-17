@@ -9,7 +9,7 @@
         <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 
         <property name="connection.username">root</property>
-        <property name="connection.password">root</property>
+        <property name="connection.password">313377</property>
 
         <property name="hbm2ddl.auto">update</property>
 
@@ -18,6 +18,10 @@
         <property name="use_sql_comments">false</property>
 
         <mapping class="com.hillel.webinar.hibernate.entity.Employee"/>
+        <mapping class="com.hillel.webinar.hibernate.entity.User"/>
+        <mapping class="com.hillel.webinar.hibernate.entity.Customer"/>
+        <mapping class="com.hillel.webinar.hibernate.entity.Company"/>
+        <mapping class="com.hillel.webinar.hibernate.entity.Department"/>
 
         <!--
         <mapping resource="com/hillel/hibernate/entity/Student.hbm.xml"></mapping>
